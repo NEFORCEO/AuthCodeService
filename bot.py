@@ -30,6 +30,7 @@ async def send_code(param: dict):
 async def verify_success(param: dict):
     username = param["username"]
     message = param['message']
+    
     await bot.send_message(
         chat_id=username,
         text=message
